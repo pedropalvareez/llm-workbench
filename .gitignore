@@ -1,0 +1,42 @@
+# Secrets
+.env
+.env.*
+*.token
+.huggingface/
+token
+secrets*
+
+# Data: real datasets come from the Hub; keep only the folder marker
+data/*
+!data/.gitkeep
+
+# Model weights and training artifacts
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.gguf
+checkpoints/
+outputs/
+runs/
+wandb/
+results/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Agent instructions: local only
+AGENTS.md
+CLAUDE.md
